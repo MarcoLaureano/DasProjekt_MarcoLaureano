@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startmenu">
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_width="69dp"
+        android:layout_height="39dp"
+        android:background="@drawable/text_bg"
+        android:gravity="center"
+        android:text="MENU"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <ImageButton
+        android:id="@+id/ComingSoon1"
+        android:layout_width="104dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/buttonimg_bg"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/local"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/coming_soo" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="160dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:hint="username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/local"
+        android:layout_width="104dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/buttonimg_bg"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tienda" />
+
+    <ImageButton
+        android:id="@+id/ComingSoon2"
+        android:layout_width="104dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/buttonimg_bg"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/coming_soo" />
+
+    <ImageButton
+        android:id="@+id/ranking"
+        android:layout_width="104dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/buttonimg_bg"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/corona" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="8dp"
+        android:text="Welocme! "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
